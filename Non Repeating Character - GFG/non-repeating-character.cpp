@@ -16,13 +16,12 @@ class Solution
        char a=' ';
        for(int i=0;i<S.length();i++)
        {
-           char ch=S[i];
-           mp[ch]++;
+           mp[S[i]]++;
        }
      
      for(int i=0;i<S.length();i++){
-         char ch=S[i];
-         if(mp[ch]==1){
+         
+         if(mp[S[i]]==1){
              return S[i];
          }
      }
